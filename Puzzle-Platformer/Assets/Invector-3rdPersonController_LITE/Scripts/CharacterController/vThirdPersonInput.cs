@@ -12,6 +12,7 @@ namespace Invector.vCharacterController
         public KeyCode jumpInput = KeyCode.Space;
         public KeyCode strafeInput = KeyCode.Tab;
         public KeyCode sprintInput = KeyCode.LeftShift;
+        public KeyCode attackInput = KeyCode.Mouse0;
 
         [Header("Camera Input")]
         public string rotateCameraXInput = "Mouse X";
@@ -79,6 +80,16 @@ namespace Invector.vCharacterController
             SprintInput();
             StrafeInput();
             JumpInput();
+            //AttackInput();
+        }
+
+        public virtual void AttackInput()
+        {
+            if (Input.GetKeyDown(attackInput))
+            {
+                cc.Attack();
+            }
+
         }
 
         public virtual void MoveInput()

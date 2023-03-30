@@ -77,6 +77,13 @@ namespace Invector.vCharacterController
                 moveDirection = new Vector3(inputSmooth.x, 0, inputSmooth.z);
             }
         }
+        public virtual void Attack()
+        {
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+            {
+                animator.CrossFadeInFixedTime("Attack", 0.1f);
+            }
+        }
 
         public virtual void Sprint(bool value)
         {
