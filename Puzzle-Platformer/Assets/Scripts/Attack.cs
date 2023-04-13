@@ -16,6 +16,9 @@ public class Attack : MonoBehaviour
     {
         hitbox = GetComponent<Collider>();
         hitbox.enabled = false;
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
@@ -34,9 +37,9 @@ public class Attack : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
             if (other.gameObject.tag == "Enemy")
-                {
-                    other.gameObject.GetComponent<Animator>().CrossFadeInFixedTime("Hit",0.1f);
-                }
+            {
+                other.gameObject.GetComponent<Animator>().Play("Hit");
+            }
 
     }
 
