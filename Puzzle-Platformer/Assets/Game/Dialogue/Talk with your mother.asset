@@ -1,0 +1,342 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8308768020569385732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d682c531190610744a9a5e8627450547, type: 3}
+  m_Name: e25790d3-e4b2-4334-a1c2-96cfbb4ee9d9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Why are you reading my letters, but can you tell me what was in it then?
+  children:
+  - 9726bf5a-1a63-43a1-b161-1cf331d2a795
+  rect:
+    serializedVersion: 2
+    x: 1093
+    y: 381
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-7621301886537372120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d682c531190610744a9a5e8627450547, type: 3}
+  m_Name: f3c5701a-70d8-4b39-8669-eb9ac1e6fb28
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: It was a letter from the king asking to all the men aged 18-25 to help him
+    save the princess
+  children:
+  - 84f79b07-f430-4968-a571-f39bb5e23672
+  rect:
+    serializedVersion: 2
+    x: 1659
+    y: 168
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-7318363930438155568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d682c531190610744a9a5e8627450547, type: 3}
+  m_Name: fe1e62fa-1789-441a-b81a-8aee35be9173
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Good luck and be safe!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2659
+    y: 168
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-7253227276688875558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d682c531190610744a9a5e8627450547, type: 3}
+  m_Name: f9515d02-20e5-45e8-acb3-95129bb8c463
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Our dog destroyed the letter after i finished reading it
+  children:
+  - e25790d3-e4b2-4334-a1c2-96cfbb4ee9d9
+  rect:
+    serializedVersion: 2
+    x: 843
+    y: 381
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-314676724726487706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d682c531190610744a9a5e8627450547, type: 3}
+  m_Name: 84f79b07-f430-4968-a571-f39bb5e23672
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What happend to the princess?
+  children:
+  - e12e68f5-6987-4eb0-90c8-2669b913b6b5
+  rect:
+    serializedVersion: 2
+    x: 1909
+    y: 168
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20020754e2d077c45a6d80bb16361ff0, type: 3}
+  m_Name: Talk with your mother
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 6231528854957452015}
+  - {fileID: 5671575357008045765}
+  - {fileID: 6911728122431352640}
+  - {fileID: 4619437096545174234}
+  - {fileID: 7699765608877937309}
+  - {fileID: -7253227276688875558}
+  - {fileID: -8308768020569385732}
+  - {fileID: -7621301886537372120}
+  - {fileID: -314676724726487706}
+  - {fileID: 4974312908326055318}
+  - {fileID: 1027538462388491256}
+  - {fileID: -7318363930438155568}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1027538462388491256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d682c531190610744a9a5e8627450547, type: 3}
+  m_Name: 158e1f61-4e73-4e51-a844-d5d330510985
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Okey then i will go to guildport!
+  children:
+  - fe1e62fa-1789-441a-b81a-8aee35be9173
+  rect:
+    serializedVersion: 2
+    x: 2409
+    y: 168
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &4619437096545174234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d682c531190610744a9a5e8627450547, type: 3}
+  m_Name: 9943a390-b195-42fe-9fd2-d5a9cd0a9ff9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Can i have the letter?
+  children:
+  - f9515d02-20e5-45e8-acb3-95129bb8c463
+  rect:
+    serializedVersion: 2
+    x: 593
+    y: 381
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &4974312908326055318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d682c531190610744a9a5e8627450547, type: 3}
+  m_Name: e12e68f5-6987-4eb0-90c8-2669b913b6b5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: She was taken by a dragon to the dragon hills, but you can get more information
+    if you go talk to the king in Guildport!
+  children:
+  - 158e1f61-4e73-4e51-a844-d5d330510985
+  rect:
+    serializedVersion: 2
+    x: 2159
+    y: 168
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &5671575357008045765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d682c531190610744a9a5e8627450547, type: 3}
+  m_Name: 1b35ca35-416a-4a9e-a20e-172691c9298c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: There is a letter for you!
+  children:
+  - e2dc19bf-124b-419b-8d47-4bf0c6e01de5
+  - 9943a390-b195-42fe-9fd2-d5a9cd0a9ff9
+  rect:
+    serializedVersion: 2
+    x: 361
+    y: 287
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6231528854957452015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d682c531190610744a9a5e8627450547, type: 3}
+  m_Name: da4a0ae4-40a2-4149-84f5-2a93458ea152
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hi there my love
+  children:
+  - 1b35ca35-416a-4a9e-a20e-172691c9298c
+  rect:
+    serializedVersion: 2
+    x: 118
+    y: 288
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6911728122431352640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d682c531190610744a9a5e8627450547, type: 3}
+  m_Name: e2dc19bf-124b-419b-8d47-4bf0c6e01de5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Can you read it to me please?
+  children:
+  - 9726bf5a-1a63-43a1-b161-1cf331d2a795
+  rect:
+    serializedVersion: 2
+    x: 592
+    y: 180
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7699765608877937309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d682c531190610744a9a5e8627450547, type: 3}
+  m_Name: 9726bf5a-1a63-43a1-b161-1cf331d2a795
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Yes ofcourse
+  children:
+  - f3c5701a-70d8-4b39-8669-eb9ac1e6fb28
+  rect:
+    serializedVersion: 2
+    x: 1409
+    y: 168
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
