@@ -5,10 +5,13 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     public Animator playerAnimator;
+    public AudioClip[] SoundEffects;
+    private AudioSource _audioSource;
     public float attackTime = 0.1f;
     public float attackCooldown = 0.6f;
-    public float attackDamaged = 1.0f;
+    public float attackDamage = 25.0f;
     private bool canAttack = true;
+    private bool hitSomething = false;
     private Collider hitbox;
 
     // Start is called before the first frame update
@@ -16,6 +19,7 @@ public class Attack : MonoBehaviour
     {
         hitbox = GetComponent<Collider>();
         hitbox.enabled = false;
+        _audioSource = GetComponent<AudioSource>();
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -36,17 +40,31 @@ public class Attack : MonoBehaviour
    
     private void OnTriggerEnter(Collider other)
     {
-            if (other.gameObject.tag == "Enemy")
-            {
-                other.gameObject.GetComponent<Animator>().Play("Hit");
-            }
-
+        Debug.Log(other.name);
+        hitSomething = true;
+        Enemy enemy = other.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            _audioSource.PlayOneShot(SoundEffects[2]);
+            enemy.TakeDamage(attackDamage);
+        }
+        else
+        {
+            _audioSource.PlayOneShot(SoundEffects[1]);
+        }
+        
+            
     }
 
     IEnumerator StartAttackTime()
     {
         yield return new WaitForSeconds(attackTime);
         hitbox.enabled = false;
+        if (!hitSomething)
+        {
+            _audioSource.PlayOneShot(SoundEffects[0]);
+        }
+        hitSomething = false;
     }
 
     IEnumerator ResetAttackCooldown()

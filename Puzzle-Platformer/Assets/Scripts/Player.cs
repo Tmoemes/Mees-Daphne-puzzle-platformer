@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("collectible touched ");
+        
         if (other.gameObject.tag == "Collectible")
         {
             _score++;

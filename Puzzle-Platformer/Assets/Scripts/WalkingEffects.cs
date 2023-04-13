@@ -20,19 +20,19 @@ public class WalkingEffects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) && !_isPlaying && MovementMotorScript.isGrounded)
+        if ((Input.GetAxis("Vertical") !=0 || Input.GetAxis("Horizontal") != 0) && !_isPlaying && MovementMotorScript.isGrounded)
         {
             _audioSource.pitch = Random.Range(1f,1.3f);
             _audioSource.volume = Random.Range(0.3f, 0.8f);
 
             if (MovementMotorScript.isSprinting)
             {
-                Debug.Log("Playing fast");
+                //Debug.Log("Playing fast");
                 _currentlyPlaying = SoundEffects[1];
             }
             else
             {
-                Debug.Log("Playing normal");
+                //Debug.Log("Playing normal");
                 _currentlyPlaying = SoundEffects[0];
             }
             _audioSource.PlayOneShot(_currentlyPlaying);
