@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -10,6 +11,7 @@ public class Enemy : MonoBehaviour , IGetHit
     public float attackRange = 1f;
     public float attackSpeed = 1f;
     public float moveSpeed = 1f;
+    public float followDistance = 10f;
 
     private float attackCooldown = 0f;
 
@@ -23,15 +25,17 @@ public class Enemy : MonoBehaviour , IGetHit
         animator = GetComponent<Animator>();
         navMeshAgent =  GetComponent<NavMeshAgent>();
         Player = GameObject.FindWithTag("Player");
-        navMeshAgent.destination = Player.transform.position;
+        
         navMeshAgent.isStopped = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        navMeshAgent.destination = Player.transform.position;
-        
+        if (Vector3.Distance(Player.transform.position, transform.position) < followDistance)
+        {
+            navMeshAgent.destination = Player.transform.position;
+        }
     }
 
     public void TakeDamage(float damage)
